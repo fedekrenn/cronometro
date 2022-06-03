@@ -1,9 +1,11 @@
 // Obtengo los botones del DOM
 const botonInicio = document.getElementById("inicio")
 const botonParar = document.getElementById("stop")
+const botonReinicio = document.getElementById("delete")
 
 // Evento para iniciar el contador
 botonInicio.addEventListener("click", iniciar)
+
 
 // Se inicializan variables
 let cronometro;
@@ -21,12 +23,23 @@ function iniciar(){
     
     // escucha de botón parar para lanzar la función que rompe el intervalo
     botonParar.addEventListener("click", parar)
+    botonReinicio.addEventListener("click", reseteo)
 
     function parar(){
         clearInterval(cronometro)
     }
 
+    function reseteo(){
+
+        parar()
+
+        document.getElementById("minutos").innerText = "00";
+        document.getElementById("segundos").innerText = "00";
+        segundos = 0;
+        minutos = 0;
+    }
 }
+
 
 
 function actualizarReloj() {
