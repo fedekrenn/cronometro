@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/reloj.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
     <title>Cronómetro hecho con vanilla JS</title>
 </head>
+
 <body>
     <main>
-        <span id="minutos">00</span>:<span id="segundos">00</span>
-        <button id="inicio">Iniciar</button>
-        <button id="stop">Parar</button>
-        <button id="delete">Borrar</button>
+        <div class="cronometer">
+            <div class="time-container">
+                <span id="minutos">00</span>:<span id="segundos">00</span>
+            </div>
+            <div>
+                <button id="inicio">Iniciar</button>
+                <button id="stop">Parar</button>
+                <button id="delete">Borrar</button>
+            </div>
+            </divc>
     </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
