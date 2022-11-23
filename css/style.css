@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    font-size: 35px;
+}
+
+body {
+    background-image: url('../img/vintage-clock.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.cronometer {
+    display: flex;
+    min-width: 25vw;
+    height: 30vh;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-size: 13px;
+    border-width: 1px;
+    padding: 10px 20px;
+    color: #757d6f;
+    border-color: #b2b8ad;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 0px 14px -3px #f2fadc;
+    text-shadow: inset 0px 1px 0px #ced9bf;
+    background: linear-gradient(#dbe6c4, #9ba892);
+
+}
+
+button:hover {
+    background: linear-gradient(#9ba892, #dbe6c4);
+}
+
+@media (max-width: 975px) {
+    .cronometer {
+        min-width: 40vw;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .cronometer {
+        min-width: 60vw;
+    }
+
+    button {
+        padding: 3px 5px;
+        margin: 6px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
