@@ -27,6 +27,9 @@ function iniciar(){
 
     function parar(){
         clearInterval(cronometro)
+
+        botonInicio.disabled = false;
+        botonInicio.classList.toggle("disabled")
     }
 
     function reseteo(){
@@ -37,7 +40,13 @@ function iniciar(){
         document.getElementById("segundos").innerText = "00";
         segundos = 0;
         minutos = 0;
+
+        botonInicio.disabled = false;
+        botonInicio.classList.remove("disabled")
     }
+
+    botonInicio.disabled = true;
+    botonInicio.classList.toggle("disabled")
 }
 
 

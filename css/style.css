@@ -52,6 +52,16 @@ button {
 
 button:hover {
     background: linear-gradient(#9ba892, #dbe6c4);
+    cursor: pointer;
+}
+
+.disabled{
+    background: rgb(70, 64, 64)
+}
+
+.disabled:hover{
+    background: rgb(70, 64, 64);
+    cursor: not-allowed;
 }
 
 @media (max-width: 975px) {
