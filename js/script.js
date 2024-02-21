@@ -7,6 +7,9 @@ const botonReinicio = document.getElementById("delete")
 botonInicio.addEventListener("click", iniciar)
 
 
+console.log('Salida para la cosola');
+
+
 // Se inicializan variables
 let cronometro;
 let segundos = 0;
